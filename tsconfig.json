@@ -10,7 +10,7 @@
     "noImplicitAny": false,
     "strictNullChecks": false
   },
-  "include": [ "**/*", "../shared/**/*", "../server/src/**/*", "../server/test/**/*" ],
+  "include": [ "./src/**/*", "../shared/**/*", "../server/src/**/*", "../web/src/**/*" ],
   "exclude": [ "**/node_modules/" ],
   "ts-node": { "swc": true }
 }

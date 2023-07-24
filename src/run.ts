@@ -1,12 +1,12 @@
 import 'colors';
-import { readdirSync, statSync, writeFileSync } from 'fs';
+import { readdirSync, statSync } from 'fs';
 import { join, resolve } from 'path';
 
 import { runAll } from './lib';
 
 const skipPaths = ['node_modules/'];
 
-const rootDir = resolve(__dirname, '..');
+const rootDir = resolve(__dirname, '../..');
 
 const [ _, __, ..._dirs ] = process.argv;
 
@@ -41,7 +41,6 @@ const run = async () => {
       addTests(testDir);
     }
     const result = await runAll();
-    // writeFileSync('./test.json', JSON.stringify(result, null, '  '));
     process.exit(result.pass ? 0 : 1);
   } catch(e) {
     console.log(`Fatal error: `.red, e);
