@@ -1,0 +1,8 @@
+{
+  "ext": "js,ts,sql",
+  "restartable": false,
+  "watch": [
+    ".",
+    "../server/test"
+  ]
+}
