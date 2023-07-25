@@ -3,6 +3,8 @@
   "restartable": false,
   "watch": [
     ".",
-    "../server/test"
+    "../server",
+    "../shared",
+    "../web"
   ]
 }
