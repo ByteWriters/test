@@ -1,9 +1,10 @@
 {
-  "name": "node-test",
+  "name": "@bytewriters/test",
   "version": "0.0.1",
   "main": "run.ts",
   "author": "J. Ouweneel",
   "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "test": "jest"
   },
