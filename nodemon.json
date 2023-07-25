@@ -1,10 +1,10 @@
 {
-  "ext": "js,ts,sql",
+  "ext": "js,ts,tsx,sql",
   "restartable": false,
   "watch": [
-    ".",
-    "../server",
+    "src",
+    "../server/src",
     "../shared",
-    "../web"
+    "../web/src"
   ]
 }

@@ -4,8 +4,10 @@
   "main": "run.ts",
   "author": "J. Ouweneel",
   "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "test": "yarn ts-node ./src/run.ts"
+    "test": "ts-node src/run.ts",
+    "test-dev": "nodemon --exec node -r ts-node/register src/run.ts"
   },
   "dependencies": {
     "colors": "^1.4.0",
