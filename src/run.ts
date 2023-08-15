@@ -6,7 +6,7 @@ import { runAll } from './lib';
 
 const skipPaths = ['node_modules/'];
 
-const rootDir = resolve(__dirname, '../..');
+const rootDir = resolve(__dirname, '../../..');
 
 const [ _, __, ..._dirs ] = process.argv;
 
